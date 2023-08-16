@@ -1,0 +1,13 @@
+machines:
+  BasicMachine:
+    displayItem: DISPENSER
+    recipe:
+      - IRON_INGOT, REDSTONE, IRON_INGOT
+      - REDSTONE, FURNACE, REDSTONE
+      - IRON_INGOT, REDSTONE, IRON_INGOT
+  AdvancedMachine:
+    displayItem: DROPPER
+    recipe:
+      - DIAMOND, REDSTONE, DIAMOND
+      - REDSTONE, FURNACE, REDSTONE
+      - DIAMOND, REDSTONE, DIAMOND

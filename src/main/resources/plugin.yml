@@ -1,0 +1,8 @@
+name: Machines
+version: '${project.version}'
+main: org.playerdeath.machines.Machines
+api-version: 1.20
+commands:
+  machinegui:
+    description: Opens the GUI to edit the machine recipe.
+    usage: /<command>
