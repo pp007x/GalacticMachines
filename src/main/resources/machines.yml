@@ -11,3 +11,9 @@ machines:
       - DIAMOND, REDSTONE, DIAMOND
       - REDSTONE, FURNACE, REDSTONE
       - DIAMOND, REDSTONE, DIAMOND
+  Miner:
+    displayItem: DROPPER
+    recipe:
+      - "AIR, DROPPER, AIR"
+      - "AIR, CHEST, AIR"
+      - "AIR, AIR, AIR"

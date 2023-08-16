@@ -1,8 +1,11 @@
 package org.playerdeath.machines;
 
 import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.block.BlockFace;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.inventory.CraftItemEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -13,6 +16,17 @@ public class MachineCraftListener implements Listener {
     public MachineCraftListener(JavaPlugin plugin) {
         this.plugin = plugin;
         Bukkit.getPluginManager().registerEvents(this, plugin);
+    }
+    @EventHandler
+    public void onBlockPlace(BlockPlaceEvent event) {
+        if (event.getBlock().getType() == Material.DROPPER) {
+            // Check for adjacent chest
+            for (BlockFace face : BlockFace.values()) {
+                if (event.getBlock().getRelative(face).getType() == Material.CHEST) {
+                    // Setup detected, you can store this setup in a List or a Map for reference
+                }
+            }
+        }
     }
 
     @EventHandler
